@@ -1,17 +1,14 @@
 
 ---
-- name: test connect
-  hosts: all
+- name: update
+  hosts: dpisklov-test.dks.lanit.ru
   connection: local
   become: yes
 
   tasks:
 
-  - name: ping server
-    ping:
-~
-~
-~
-~
+  - name: Start utils certbot, based on running process opt/certbot/certbot-auto
+    shell: /opt/certbot/certbot-auto renew --force-renew
 
-
+  - name: letter
+    raw: echo "test" | mail -s "dpisklov-test.dks.lanit.ru" Pisklov@lanit.ru
