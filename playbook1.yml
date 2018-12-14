@@ -1,6 +1,7 @@
 ---
 - name: update
   hosts: dpisklov-test.dks.lanit.ru
+  connect: ssh
   become: yes
 
   tasks:
