@@ -1,7 +1,7 @@
 ---
 - name: update
   hosts: dpisklov-test.dks.lanit.ru
-  connection: docker
+  connection: local
   become: yes
 
   tasks:
