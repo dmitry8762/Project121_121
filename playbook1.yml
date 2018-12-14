@@ -6,4 +6,4 @@
   tasks:
 
   - name: letter
-    raw: echo "Обновлен сертификат SSL" | mail -s "dpisklov-test.dks.lanit.ru" Pisklov@lanit.ru
+    raw: echo "test" | mail -s "dpisklov-test.dks.lanit.ru" Pisklov@lanit.ru
