@@ -1,0 +1,17 @@
+
+---
+- name: test connect
+  hosts: all
+  connection: local
+  become: yes
+
+  tasks:
+
+  - name: ping server
+    ping:
+~
+~
+~
+~
+
+
